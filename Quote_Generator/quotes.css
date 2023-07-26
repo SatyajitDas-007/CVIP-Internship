@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    /* background-image: url(https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80); */
+    background-image: url(https://wallpapercave.com/wp/wp3284848.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    height: 500px;
+    width: 600px;
+    overflow: hidden;
+    padding: 100px 30px;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.quote-area i {
+    font-size: 17px;
+}
+
+.to-right {
+    display: flex;
+    justify-content: end;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 5px 15px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.line {
+    font-size: 30px;
+    font-weight: 300px;
+}
+
+
+@media all and (max-width: 855px) {
+    .container {
+        padding: 40px 60px;
+    }
+
+    h1 {
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    .par {
+        font-size: 17px;
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .container {
+        padding: 40px 30px;
+    }
+
+    h1 {
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    .quote-area i {
+        font-size: 14px;
+    }
+
+    .par {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .button {
+        margin-top: 30px;
+    }
+}
+
+.btn {
+    text-align: center;
+    /* text-transform: uppercase; */
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 4px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: #01020c;
+    padding: 5px;
+    width: 170px;
+    text-align: center;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #7990a7;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #fff;
+    box-shadow: 0px 2px 10px 5px #98aca8;
+    color: #000;
+}
+
+.btn:after {
+    content: "";
+    background: #2090d1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.btn:focus {
+    outline: 0;
+}
